@@ -63,6 +63,11 @@ h3::before {
     opacity: 1;
 }
 
+h3:hover::before {
+    height: 75%;
+    background-color: #ff2949;
+}
+
 .explanation, .benefits {
     margin-top: 30px;
     background-color: #272840;
