@@ -18,7 +18,7 @@ ul {
 
 .page-wrapper {
     color: #272840;
-    background-color: rgb(201, 201, 201);
+    background-color:#F2DDD0;
     padding: 22px 150px 22px 150px;
 
     line-height: 23px;
@@ -74,3 +74,50 @@ h3::before {
 .explanation h3::before, .benefits h3::before {
     background-color: transparent;
 }
+
+.sidebar {
+    margin-top: 120px;
+    background-color: #ffbf00;
+
+    position: relative;
+    min-height: 350px;
+
+}
+
+.sidebar::before {
+    content: url(COOK.png);
+    position: absolute;
+    right: -50px;
+    top: -388px;
+    transform: scale(0.4);
+}
+
+.design-selection{
+    left: -40px;
+    top: -40px;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 0 25px 25px 25px;
+    
+}
+
+.design-archives{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.zen-resources{
+    position: absolute;
+    right: 30px;
+    bottom: 60px;
+    background-color: rgba(0, 123, 255, 0.666);
+    padding: 0 40px 40px 40px;
+}
+
+.zen-resources a, .design-selection a {
+    color: #272840;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
