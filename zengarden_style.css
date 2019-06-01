@@ -1,61 +1,76 @@
-#css-zen-garden {
+* {
+    margin: 0;
+    padding: 0;
+} 
 
-        margin-top: 20px;
-        margin-right: 55px;
-        margin-left: 55px;
-        
-        padding: 15px;
-
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-        text-align: justify;
-        overflow: auto;
-
-        display: flex;
-        justify-content: flex-start;
-        align-content: flex-start;
-        position: relative;
-
-
-
+p {
+    font-size: 14px;
 }
 
-.intro {
-
-        margin-left: 55px;
-        margin-top: 20px;
-        padding: 15px;
-
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 20px;
-
+a {
+    color: #779DA6;
+    text-decoration: none;
 }
 
-h1, h2    {
-
-        margin-left: 55px;
-        margin-top: 20px;
-        padding: 15px;
-
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 120px;
-        font-weight: 600;
-
+ul {
+    list-style: none;
 }
 
-h3  {
+.page-wrapper {
+    color: #272840;
+    background-color: rgb(201, 201, 201);
+    padding: 22px 150px 22px 150px;
 
-        margin-left: 55px;
-        margin-top: 20px;
-        padding: 15px;
-
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 38px;
-        font-weight: 600;
-
+    line-height: 23px;
+    font-family: 'Noto Sans HK', sans-serif;
+    text-align: justify;
 }
+
+h1 {
+    transform: rotate(270deg);
+    transform-origin: 83px 130px;
     
-p   {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
 
+h2 {
+    font-size: 42px;
+    font-weight: 900;
+
+    margin-bottom: 20px;
+}
+
+
+h3 {
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+h3::before {
+    content: "";
+    display: block;
+    border-radius: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    background-color: #ffbb00;
+    width: calc(100% + 5%);
+    height: 35%;
+    opacity: 1;
+}
+
+.explanation, .benefits {
+    margin-top: 30px;
+    background-color: #272840;
+    color:  rgb(201, 201, 201);
+    padding: 0px 30px 30px 30px;
+
+}
+
+.explanation h3::before, .benefits h3::before {
+    background-color: transparent;
 }
